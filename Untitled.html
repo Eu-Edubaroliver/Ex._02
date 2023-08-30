@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="exercicios1.css">
+    
+    </head>
+    
+    <body>
+        <h1>O que acontecerá em cada dia da semana</h1>
+    
+        <button class="bnt" onclick="Agenda()">Marcar na Agenda</button>
+        <!--  -->
+        <button class="bnt" onclick="doma()">Ver agenda</button>
+    
+        <script>
+            
+            let Domingo = [];
+            let Segunda = [];
+            let Terça = [];
+            let Quarta = [];
+            let Quinta = [];
+            let Sexta = [];
+            let Sábado = [];
+               
+    
+            let oque;
+            function Agenda() {
+                let retorno;
+                let tarefa;
+                let dia = prompt('Digite o dia da semana que você deseja marcar uma tarefa, ou digite sair para sair', 'Digite aqui');
+    
+                switch (dia) {
+                    case 'domingo':
+                        tarefa = prompt('Digite sua tarefa', 'Digite aqui');
+                        alert('Você adicionou ' + tarefa)
+                        horario = prompt('Digite o horario', 'Digite aqui');
+                        Domingo.push(tarefa + ' - ' + horario +'\n')
+                        break;
+                        case 'segunda':
+                        tarefa = prompt('Digite sua tarefa', 'Digite aqui');
+                        alert('Você adicionou ' + tarefa)
+                        horario = prompt('Digite o horario', 'Digite aqui');
+                        Segunda.push(tarefa + ' - ' + horario +'\n')
+                        break;
+                        case 'terça':
+                        tarefa = prompt('Digite sua tarefa', 'Digite aqui');
+                        alert('Você adicionou ' + tarefa)
+                        horario = prompt('Digite o horario', 'Digite aqui');
+                        Terça.push(tarefa + ' - ' + horario +'\n')
+                        break;
+                        case 'quarta':
+                        tarefa = prompt('Digite sua tarefa', 'Digite aqui');
+                        alert('Você adicionou ' + tarefa)
+                        horario = prompt('Digite o horario', 'Digite aqui');
+                        Quarta.push(tarefa + ' - ' + horario +'\n')
+                        break;
+                        case 'quinta':
+                        tarefa = prompt('Digite sua tarefa', 'Digite aqui');
+                        alert('Você adicionou ' + tarefa)
+                        horario = prompt('Digite o horario', 'Digite aqui');
+                        Quinta.push(tarefa + ' - ' + horario +'\n')
+                        break;
+                        case 'sexta':
+                        tarefa = prompt('Digite sua tarefa', 'Digite aqui');
+                        alert('Você adicionou ' + tarefa)
+                        horario = prompt('Digite o horario', 'Digite aqui');
+                        Sexta.push(tarefa + ' - ' + horario +'\n')
+                        break;
+                        case 'sabado':
+                        tarefa = prompt('Digite sua tarefa', 'Digite aqui');
+                        alert('Você adicionou ' + tarefa)
+                        horario = prompt('Digite o horario', 'Digite aqui');
+                        Sábado.push(tarefa + ' - ' + horario +'\n')
+                        break;
+                        case 'sair':
+                       alert('Você está saindo')
+                        break;
+                    default:
+                        alert('Insira certamente')
+                        break;
+                }
+    
+            }
+    function doma(){
+        let ver = prompt('Ver a sua agenda', 'Digite aqui');
+    switch(ver){
+        case 'domingo':
+            alert('No domingo você terá' + Domingo)
+            break;
+            case 'segunda':
+            alert('Na segunda você terá' + Segunda)
+            break;
+            case 'terça':
+            alert('Na terça você terá' + Terça)
+            break;
+            case 'quarta':
+            alert('Na quarta você terá' + Quarta)
+            break;
+            case 'quinta':
+            alert('Na quinta você terá' + Quinta)
+            break;
+            case 'sexta':
+            alert('Na sexta você terá' + Sexta)
+            break;
+            case 'sabado':
+            alert('No sábado você terá' + Sábado)
+            break;
+    }
+     
+    }
+    
+    
+        </script>
+    
+        <style>
+            body {
+                background-color: #c6f2fd;
+            }
+    
+            button {
+                background-color: #c6f2fd;
+                border-radius: 25px;
+                border-color: #c6f2fd;
+                box-sizing: 1px;
+            }
+        </style>
+    
+    </body>
+    
+    </html>
